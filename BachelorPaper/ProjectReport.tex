@@ -1,0 +1,136 @@
+\documentclass{article}
+
+\title{\Huge Project Title \\ \Large Subtitle}
+\date{Number of characters\\ Software Engineering \\ Semester 7 \\ 10-07-2019}
+\author{Claudiu Rediu \\ Supervisors: Supervisor\\ Name and Logo Education Instituion \\ Logo of Company}
+\usepackage{fancyhdr} % Customizable Headers
+\usepackage[backend = bibtex, style=authoryear, sorting=nyt]{biblatex}
+\usepackage{hyperref}
+\usepackage[toc,page]{appendix}
+\bibliography{referencesBachelor}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{VIA Figure}
+\lhead{VIA ICT Project Report Template / Title of the Project Report}
+\rfoot{Page \thepage}
+\begin{document}
+	\pagenumbering{gobble}
+	\maketitle
+	\newpage
+	\pagenumbering{arabic}
+	\tableofcontents
+	\newpage
+	\section*{Abstract}
+	\addcontentsline{toc}{section}{Abstract}
+	An abstract is a shortened version of the report and should contain all information necessary for the reader to determine:
+	\begin{enumerate}
+		\item What are the aim and objectives of the project
+		\item What are the main technical choices
+		\item What are the results
+	\end{enumerate}
+	Frequently, readers of a report will only read the abstract, choosing to read at length those reports that are most interesting to them. For this reason, and because abstracts are frequently made available to engineers by various computer abstracting services, this section should be written carefully and succinctly to have the greatest impact in as few words as possible.
+	\newpage
+	\section{Introduction}
+	The purpose of the introduction is to provide background information and set the scene for your project. Within which business or organization are you doing the project? Who are the stakeholders and who is the customer?
+	The background information is adapted from your project description where you have already described the problem domain. Describe the current situation and existing context. Your statements must be supported by references to reliable and relevant sources. 
+	
+	This should lead to why this project is relevant and outline your aim and objectives. Which technical problems and challenges will be presented in this report, again taken from your project description. System illustrations and rich pictures are welcome here.
+	
+	State delimitations relevant for your project in the introduction. Delimitations include what the project will not cover in relation to your project description, i.e. what could have been expected in your project. Remember that you can only make delimitations to aspects mentioned in the project description and you must argue well for your delimitations.
+	The last sentences of the introduction should be an overview of the sections to follow. This will be a good transition to the next sections.
+	
+	Remember: You must ensure a clear connection between sections in the project report, from Project Description, Requirements, Analysis, Design, Implementation to Test. This means that everything that is implemented can be found in design, everything that is designed is based on the analysis, and anything that is found in analysis has a clear link to requirements, etc.
+	
+	\newpage
+	\section{Requirements}
+	The purpose of the requirement section is to define functional and non-functional requirements. Requirements are perceived as a contract with the stakeholders (customer), and are specified to ensure a common understanding.
+	
+	Identify the users and describe their roles (e.g. actor descriptions, personas and scenarios).
+	
+	Note: Remember that all requirements must be precise and testable.
+	
+	Use the SMART principle \autocite{yc} and MoSCoW \autocite{msc13}.
+	
+	Present a numbered and prioritised list of all the requirements of the users, customer and stakeholders for the project.
+	\subsection{Functional Requirements}
+	Functional requirements could be described with Use Cases, Use Case descriptions and Actor descriptions. Use Case descriptions can be detailed with different types of UML diagrams.
+	\subsection{Non-Functional Requirements}
+	There are no standards for describing non-functional requirements. You can find a useful checklist here \autocite{db14}.For content see Appendix 3 “Project Report – VIA Engineering Guidelines”.
+	\newpage
+	\section{Analysis}
+	The purpose of the analysis section is to outline an understanding of the problem domain and specifically WHAT the stakeholders want. Here, you elaborate on your background description.
+	
+	You identify objects in the problem domain that will be involved in the solution and how these objects cooperate. The result of this analysis is a Domain Model (Larman 2004, chap.9) and other relevant diagrams.
+	Use the UML standard for all diagrams where relevant.
+	
+	Note: Remember that all implementation dependent objects are not part of the domain model only conceptual classes related to the requirements and the domain. 
+	\newpage
+	\section{Design}
+	The purpose of the design section is to outline HOW the system is structured; i.e. to transform the artefacts of the analysis into a model that can be implemented. The design section is relevant for the programmer, whereas the analysis is relevant for the stakeholder.
+	
+	Elements that may be relevant in this section:
+	\begin{itemize}
+		\item Architecture: Find architecture patterns here (Leszek Maciaszek 2004, chap.9).
+		\item Technologies: Describe technologies used, also alternative technologies. Argue for choice of technology according to the project aim.
+		\item Design Patterns: Describe which design patterns (GoF (Gamma et al. 2002) etc.) you are using and why.
+		\item Class Diagrams
+		\item Interaction Diagrams
+		\item UI design choices
+		\item Data models, persistence, etc.
+	\end{itemize}
+	
+	You must explain all diagrams in the report. These diagrams including descriptions are the blueprints for the implementation.
+	
+	Hint: One way to figure out which objects/classes are needed in the design is to apply the General Responsibility Assignment Software Patterns/principles (GRASP) (Larman 2004, chap.17).
+	
+	Hint: Consider how to design your system to make it testable.
+	
+	\newpage
+	\section{Implementation}
+	The purpose of the implementation section is to explain interesting code snippets. An idea is to explain the complete path through your system from UI to database etc.
+	
+	Remember that your implementation must be consistent with your design (Larman 2004, chap.20).
+	
+	Which standard libraries are used? How are design patterns implemented, etc.
+	
+	Hint: Implement your code in a testable manner.
+	\newpage
+	\section{Test}
+	The purpose of the test section is to document the result of your testing; to verify if the content of the requirements section has been fulfilled. How is the system tested, which strategy has been used; e.g. White Box (Unit Test), Black Box, etc.
+	\subsection{Test Specifications}
+	For functional requirements, test specifications must be listed. These test specifications can be described as soon as the functional requirements have been completed (Use Cases including descriptions).
+	
+	IEEE can be used as a template for test specification (IEEE Computer Society 2008). VIA Library can give you access to this standard.
+	\newpage
+	\section{Results and Discussions}
+	The purpose of the results and discussion section is to present the outcome and achieved results of the project.
+	\newpage
+	\section{Conclusions}
+	The purpose of the conclusion section is to compile the results from each section in the report. What is the conclusion? Did the project fulfil the requirements? Etc.
+	
+	You can only comment on the present content, no new topics or content can be introduced in this section.
+	\newpage
+	\section{Project Future}
+	Reflect on your project from a technical viewpoint and describe what you would change if you could.
+	
+	Suggest how the project could be improved or made ready for production. Discuss scalability, suggest possible spin-offs, what is needed, missing, etc.?
+	\newpage
+	\section{Sources Of Information}
+	
+	\printbibliography
+	\newpage
+	\section{Appendices}
+	The purpose of your appendices is to provide extra information to the expert reader. List the appendices in order of mention.
+	Example of appendices:
+	\begin{itemize}
+		\item Project Description
+		\item User Guide
+		\item Source code
+		\item Diagrams
+		\item Data sheets
+		\item Etc.
+	\end{itemize}
+	\newpage
+	\section*{Appendix A Project Description}
+	Insert the original Project Description here
+\end{document}
