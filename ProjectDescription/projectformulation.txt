@@ -1,0 +1,41 @@
+It is not accesible to the lay person to draw insights from the available online information about international imports and exports.
+
+
+Requirements
+-User should be able to visually explore exports and imports between the reporting and partner countries
+-User should be able to see at least yearly information about import and export
+-User should be able to filter on industry, category inside the industry, product, country
+-User should be able to select a country to see detailed information
+
+Functional Requirements:
+-Data is stored in a relational database
+
+Delimitations:
+-The system will not make predictions on current data
+-The system will not handle planning of supply chain
+-The system will not contain all internationaly recognized countries
+
+Problem Formulation:
+Main Question: How to present, in a user-friendly manner, trade information between countries?
+Sub-Question: How to select relevant data provided by external APIs?
+Sub-Question: How will the selected relevant data be stored?
+Sub-Question: How will the components communicate between each other?
+
+choice of models and methods:
+
+
+
+
+POC:
+China
+USA
+Denmark
+Germany
+Japan
+Rusia
+United Kingdom
+Romania
+Brasilia
+Saudia Barbaria
+South Africa
+Australia
