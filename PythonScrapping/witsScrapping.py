@@ -1,10 +1,5 @@
 from __future__ import print_function, division
-import os
-import requests
-from bs4 import BeautifulSoup as Soup
 from requests_html import HTMLSession
-import ssl
-import certifi
 import pandas as pd
 import pyodbc as db
 import re
@@ -45,6 +40,21 @@ def callWITS(session, country, year, type, partner, product, filterMap):
 
 
 def makeConnection(server, database, username, password):
+    '''
+    Function to establish connection to DB
+
+    Params:
+
+    server - server adress
+
+    database - database name
+
+    username - username for SQL Auth
+
+    password - password for SQL Auth
+
+    Returns: Connection Object and Cursor Object
+    '''
     connection = db.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER=' +
                             server+';DATABASE='+database+';UID='+username+';PWD=' + password, trusted_connection='yes')
     cursor = connection.cursor()
