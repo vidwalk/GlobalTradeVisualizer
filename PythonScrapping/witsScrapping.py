@@ -61,7 +61,7 @@ def makeConnection(server, database, username, password):
     return connection, cursor
 
 
-def writeToDB(server, database, username, password):
+def writeToDB(server, database, username, password, df):
     '''
     Function to create a connection and write to DB
     It uses paramized queries to protect from SQL Injection
@@ -109,4 +109,4 @@ if __name__ == "__main__":
     database = 'python_db'
     username = 'pynative'
     password = 'toor'
-    writeToDB(server, database, username, password)
+    #writeToDB(server, database, username, password, df)

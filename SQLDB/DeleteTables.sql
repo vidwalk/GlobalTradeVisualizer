@@ -1,0 +1,21 @@
+USE python_db
+BEGIN TRANSACTION [Tran3]
+
+	BEGIN TRY
+        DELETE FROM Country
+		DELETE FROM [Date]
+		DELETE FROM Product
+		DELETE FROM TradeLine
+		DROP TABLE TradeLine
+		DROP TABLE Country
+		DROP TABLE [Date]
+		DROP TABLE Product
+	    COMMIT TRANSACTION [Tran3]
+    END TRY
+
+    BEGIN CATCH
+
+      ROLLBACK TRANSACTION [Tran3]
+
+    END CATCH  
+GO
