@@ -1,0 +1,23 @@
+Todo:
+a) Project Description Rewrite
+	#Rewrite Background Description
+	#Document SCRUM and SCRUM Lite Process
+	#Update SCRUM Lite Section in Project Description
+	#Emphasize the fact that milestones are iterrative
+b) Analysis:
+	Use stories in format: As a <user> I would like to <value>
+	Write Use Cases
+	Use Case Diagram
+	System Analysis
+	Activity Diagram
+c) Design:
+	Entity Relationship Diagram
+	# Class Diagram for Unreal Engine
+d) Implementation
+	SQL Tables
+	Python Script for Scrapping
+	C++ implementation of Prototype in Unreal Engine
+	Communication between components
+e) Test
+	Functional Testing(Test for in-app actions) ex: Hover over Country, Click on Country, etc.
+	

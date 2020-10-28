@@ -1,0 +1,7 @@
+WorldMap
+Country
+Trades
+
+--- not mentioned in use cases ---
+Year/Date
+Product

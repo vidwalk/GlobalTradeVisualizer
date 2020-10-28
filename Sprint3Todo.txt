@@ -1,0 +1,23 @@
+Todo:
+a) Analysis:
+ - Update activity diagrams with final states (black dot at end)
+ - Analysis for one of our use cases (Up to date data for relevant analyis)
+b) Design:
+	Visualizer Class diagram (No unreal engine details, these come in implementation)	
+	Review ER Diagram
+    Change Design of Unreal UI based on feedback from Interaction Design
+    Interaction Design Documentation
+    Update System Architecture (Change unreal name)
+    Rewrite API Architecture Diagram to resemble System Architecture diagram (maintain cohesion between diagrams)
+    Rewrite Repository Pattern Diagram to resemble System Architecture diagram (maintain cohesion between diagrams)
+    Design for one of our use cases (Up to date data for relevant analyis)
+c) Implementation
+	Research database api connection
+    Expand the Unreal UI with more elements
+    Update Unreal UI to reflect Interaction Design feedback
+	Implementation for one of our use cases (Up to date data for relevant analyis)
+    Make more endpoints to support testing on Unreal side
+d) Test
+	Unit tests for api
+    Test for one of our use cases (Up to date data for relevant analyis)
+	

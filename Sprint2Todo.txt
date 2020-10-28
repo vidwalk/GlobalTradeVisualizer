@@ -1,0 +1,17 @@
+Todo:
+a) Analysis:
+	Link up user stories to use case
+	Write description to diagram
+b) Design:
+	Describe architecture (multi-tier atchitecture)
+	Interaction Design for Unreal Engine
+	Unreal Engine Class diagram	
+	Review ER Diagram
+c) Implementation
+	Research database api connection
+	Build Basic UI for displaying more useful data from the API in Unreal Engine. (Tradelines, exports, imports, maybe even graphs.)
+	Modularize HTTP component for Unreal Engine
+d) Test
+	Unit tests for api
+	Usability Testing for all Mechanics in UE4.
+	

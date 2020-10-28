@@ -1,0 +1,11 @@
+I) Analysis
+ - Improve Up to Date Use Case Documentation
+ - Create the rest of the use cases based on user stories
+II) Design
+ - Document Design for Unreal Engine 
+ - Sequence Diagrams for Use Cases
+III) Implementation
+ - Document Implementation API
+ - Using tradelines from database in Visual Application
+ - Document Continous Integration/Continous Development
+ - Improve code structure of API
